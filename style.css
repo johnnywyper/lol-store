@@ -1,0 +1,195 @@
+img {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+  background-image: url(https://wallpapercave.com/wp/DgwazAh.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #080d25f8;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  height: 100vh;
+}
+
+.champion {
+  /* height: 100vh; */
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  display: block;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1px;
+  align-items: center;
+  padding: 20px;
+  background-color: #020f22;
+  box-shadow: 0 0 5px rgba(228, 14, 14, 0.3);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  flex-wrap: ;
+}
+
+.champion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(218, 51, 51, 0.3);
+}
+.champion::before {
+  content: "";
+  transition: all 0.3 ease;
+}
+.champion:active {
+  background-color: rgb(180, 50, 50);
+  transform: scale(0.95);
+  /* transition: 1ms; */
+}
+
+.champion:hover img {
+  filter: grayscale(80%);
+  width: 100%;
+  height: auto;
+}
+
+.champion:hover .buy {
+  background-color: rgba(8, 4, 4, 0.801);
+  color: #fff;
+  border-color: #e91e63;
+}
+/* button buy now */
+
+.champion .buy {
+  /* display: inline-block; */
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  border: 2px solid #e91e63;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #e91e63;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.champion .buy:hover {
+  background-color: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-color: #e91e63;
+  transform: translateY(-3px);
+}
+
+/* p class */
+
+.champion .difficulty {
+  /* display: inline-block; */
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-right: 10px; */
+  color: #fff;
+  background-color: #9e3413;
+  position: relative;
+}
+
+.champion .difficulty::before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #2f4f4f;
+}
+
+.champion .role {
+  /* display: inline-block; */
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0fbb7988;
+  position: relative;
+}
+
+.champion .role::before {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #115c1b;
+}
+
+/* p class price */
+
+.champion .price {
+  /* display: inline-block; */
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffa500;
+  position: relative;
+  margin-top: 10px;
+}
+
+.champion .price::before {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #ffa500;
+}
+
+/* champion names h2 class */
+.champion h2 {
+  /* display: inline-block; */
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #116d09c4;
+  position: relative;
+}
+
+.champion h2::before {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-80%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 10px solid #2f4f4f;
+}
+
+.difficulty,
+.role,
+.price {
+  font-size: 14px;
+}
+
+/* @media screen and (max-width: 767px); */
